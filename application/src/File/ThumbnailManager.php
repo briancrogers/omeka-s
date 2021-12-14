@@ -105,7 +105,7 @@ class ThumbnailManager
         if (!isset($config['types']) || !is_array($config['types'])) {
             throw new Exception\ConfigException('Missing thumbnail types configuration.'); // @translate
         }
-        if (!isset($config['types']['large']) || !isset($config['types']['medium']) || !isset($config['types']['square'])) {
+        if (!isset($config['types']['large']) || !isset($config['types']['medium-large']) || !isset($config['types']['medium']) || !isset($config['types']['square'])) {
             throw new Exception\ConfigException('Missing the large, medium, or square thumbnail type configuration.'); // @translate
         }
         foreach ($config['types'] as $type) {
