@@ -75,6 +75,7 @@ $sectionNavs = [
         <?php endif; ?>
         <?php if ($media->hasThumbnails()): ?>
             <div class="value"><a href="<?php echo $escape($media->thumbnailUrl('large')); ?>"><?php echo $translate('large'); ?></a></div>
+            <div class="value"><a href="<?php echo $escape($media->thumbnailUrl('medium-large')); ?>"><?php echo $translate('medium-large'); ?></a></div>
             <div class="value"><a href="<?php echo $escape($media->thumbnailUrl('medium')); ?>"><?php echo $translate('medium'); ?></a></div>
             <div class="value"><a href="<?php echo $escape($media->thumbnailUrl('square')); ?>"><?php echo $translate('square'); ?></a></div>
         <?php endif; ?>
